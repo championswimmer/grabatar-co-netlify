@@ -1,0 +1,19 @@
+{
+  "name": "grabatar-co-netlify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/championswimmer/grabatar-co-netlify.git"
+  },
+  "author": "Arnav Gupta <dev@championswimmer.in>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/championswimmer/grabatar-co-netlify/issues"
+  },
+  "homepage": "https://github.com/championswimmer/grabatar-co-netlify#readme"
+}
