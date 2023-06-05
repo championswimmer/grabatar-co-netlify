@@ -1,5 +1,5 @@
 import type { Config, Context } from "https://edge.netlify.com";
-import { Md5Hash } from "https://deno.land/x/checksum@1.2.0/md5.ts";
+import { Hash, encode } from "https://deno.land/x/checksum@1.2.0/mod.ts";
 
 export default (request: Request, context: Context) => {
 
@@ -7,7 +7,7 @@ export default (request: Request, context: Context) => {
   const { pathname } = reqURL;
   const [, email] = pathname.split("/");
   // Create MD5 hash of email
-  const emailHash = new Md5Hash().digest(new TextEncoder().encode(email)).hex()
+  const emailHash = new Hash("md5").digest(encode(email)).hex()
 
   return new Response(`
     <html>
